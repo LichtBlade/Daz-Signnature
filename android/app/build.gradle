@@ -36,10 +36,9 @@ android {
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
         applicationId = "com.example.daz_signature"
-        // You can update the following values to match your application needs.
-        // For more information, see: https://docs.flutter.dev/deployment/android#reviewing-the-gradle-build-configuration.
-        minSdk = flutter.minSdkVersion
-        targetSdk = flutter.targetSdkVersion
+        // Ensure the minimum SDK version is compatible with your physical device
+        minSdk = 21  // Change this value if needed based on your device's Android version
+        targetSdk = flutter.targetSdkVersion // Keep this aligned with the latest SDK version
         versionCode = flutterVersionCode.toInteger()
         versionName = flutterVersionName
     }
